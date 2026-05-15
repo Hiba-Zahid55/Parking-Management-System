@@ -1,7 +1,7 @@
 # Software Requirements Specification
 # Parking Management System
 
----
+
 
 # 1. Introduction
 
@@ -16,13 +16,13 @@ The system will:
 - Calculate parking fees
 - Manage vehicle exit
 
----
+
 
 # 2. System Overview
 
 The Parking Management System is designed for parking areas such as shopping malls, universities, and offices. The system maintains parking records and ensures parking capacity constraints are not violated.
 
----
+
 
 # 3. Functional Requirements
 
@@ -35,7 +35,7 @@ The Parking Management System is designed for parking areas such as shopping mal
 | FR5 | System shall calculate parking fee |
 | FR6 | System shall prevent over-capacity parking |
 
----
+
 
 # 4. Non-Functional Requirements
 
@@ -46,7 +46,7 @@ The Parking Management System is designed for parking areas such as shopping mal
 | NFR3 | Unauthorized access shall be restricted |
 | NFR4 | System shall be reliable and available |
 
----
+
 
 # 5. Constraints
 
@@ -54,7 +54,7 @@ The Parking Management System is designed for parking areas such as shopping mal
 - One slot can contain only one vehicle
 - Vehicle must have unique registration number
 
----
+
 
 # 6. Assumptions
 
@@ -62,7 +62,7 @@ The Parking Management System is designed for parking areas such as shopping mal
 - Internet connection is available
 - Users provide correct vehicle information
 
----
+
 
 # 7. System States
 
@@ -70,7 +70,7 @@ The Parking Management System is designed for parking areas such as shopping mal
 2. Partially Occupied
 3. Full
 
----
+
 
 # 8. Validation Criteria
 
@@ -83,7 +83,7 @@ The Parking Management System is designed for parking areas such as shopping mal
 | FR5 | Fee calculation test |
 | FR6 | Capacity verification |
 
----
+
 
 # 9. Conclusion
 
