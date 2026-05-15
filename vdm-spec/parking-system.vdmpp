@@ -1,0 +1,33 @@
+class ParkingSystem
+
+types
+
+Slot = nat;
+Vehicle = token;
+
+instance variables
+
+occupied : map Slot to Vehicle := {|->};
+capacity : nat := 10;
+
+inv card dom occupied <= capacity;
+
+operations
+
+ParkVehicle : Slot * Vehicle ==> ()
+ParkVehicle(s,v) ==
+(
+  occupied := occupied ++ {s |-> v}
+)
+pre s not in set dom occupied
+post s in set dom occupied;
+
+RemoveVehicle : Slot ==> ()
+RemoveVehicle(s) ==
+(
+  occupied := {s} <-: occupied
+)
+pre s in set dom occupied
+post s not in set dom occupied;
+
+end ParkingSystem
