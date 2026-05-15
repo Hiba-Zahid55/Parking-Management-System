@@ -1,0 +1,45 @@
+[VEHICLE, SLOT]
+
+ParkingSystem
+slots : ℙ SLOT
+occupied : SLOT ↛ VEHICLE
+capacity : ℕ
+
+dom occupied ⊆ slots
+# occupied ≤ capacity
+
+
+----------------------------------------
+
+InitParkingSystem
+ParkingSystem
+
+occupied = ∅
+capacity = 10
+
+----------------------------------------
+
+ParkVehicle
+Δ ParkingSystem
+v? : VEHICLE
+s? : SLOT
+
+s? ∈ slots
+s? ∉ dom occupied
+# occupied < capacity
+
+occupied' = occupied ∪ {s? ↦ v?}
+capacity' = capacity
+slots' = slots
+
+----------------------------------------
+
+RemoveVehicle
+Δ ParkingSystem
+s? : SLOT
+
+s? ∈ dom occupied
+
+occupied' = {s?} ⩤ occupied
+capacity' = capacity
+slots' = slots
